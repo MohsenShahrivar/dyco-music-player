@@ -1,0 +1,517 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<title>Example For video Player</title>
+<body>
+
+
+<!--Comment Area-->
+
+<!--Black Background-->
+<div id="shadow-background-comment" onclick="showCommentBox(0)"></div>
+<!--End Black Background-->
+
+<!--Start Comment Layer-->
+<div id="commentLayer">
+	<svg xmlns="http://www.w3.org/2000/svg" onclick="showCommentBox(0)" class="bi bi-x-square" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>
+	<div class="comment-title row">
+		<h5>نقد، بررسی و نظرات در باره این اپیزود </h5>
+	</div>
+
+	<form class="row">
+		<div class="col-md-9 col-xl-6 form-group">
+			<label for="exampleFormControlInput1">ایمیل</label>
+			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			<label for="exampleFormControlSelect1">چه امتیازی می دهید؟</label>
+			<select class="form-control" id="exampleFormControlSelect1">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			<button type="submit" class="btn btn-primary mb-2">ثبت نظر</button>
+		</div>
+		<div class="col-md-12 col-xl-6 form-group">
+			<label for="exampleFormControlTextarea1">نظرتان را بنویسید.</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		</div>
+
+	</form>
+
+	<div class="comment row col-12" comment-number="1" data-id="326sdfef9vdf-sf69sf5sdfd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">علی دارابی</h6>
+			<p class="col-2 comDate">12 تیر 1388</p>
+			<p class="col-2 userRole">Listener</p>
+			<p class="col-1 replyNumber">1</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">میشه اولین اپیزود این پادکست رو معرفی کنید ؟</p>
+		</div>
+	</div>
+	<div class="comment row col-12" comment-number="2" data-id="326sdfef9vdf-sf6sdf5sd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">زهرا بیات لار</h6>
+			<p class="col-2 comDate">13 تیر 1388</p>
+			<p class="col-2 userRole">Speaker</p>
+			<p class="col-1 replyNumber">0</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">بله حتما ، بفرمایید https://firstepisode.ir</p>
+		</div>
+	</div>
+	<div class="comment row col-12" comment-number="3" data-id="326sdfef9vdf-sf69vsd6sd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">میثم جهان بخش</h6>
+			<p class="col-2 comDate">16 مرداد 1390</p>
+			<p class="col-2 userRole">Writer</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt"> این اپیزود جذاب ترین اپیزودی بود که تا به حال از این سری پادکست شنیده بودم !</p>
+		</div>
+	</div>
+	<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+<div class="comment row col-12" comment-number="4" data-id="3s26sdfef9vdf-sf69vsd">
+		<div class="row meta col-12">
+			<img class="picUser col-1" src="https://i.stack.imgur.com/3wsd4.png?s=32">
+			<h6 class="nameUser col-6">تینا فاضل</h6>
+			<p class="col-2 comDate">20 مرداد 1390</p>
+			<p class="col-2 userRole">Admin</p>
+			<p class="col-1 replyNumber">2</p>
+		</div>
+		<div class="col-12 row comment-text">
+			<p class="comtxt">خوشحالیم که علاقه مند بودید.</p>
+		</div>
+	</div>
+</div>
+
+<!--End Comment Area-->
+
+
+<!--Handler To Open SideBar-->
+<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-bar-left handler" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-bar-right handler" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/></svg>
+<!--End Handler-->
+
+
+ <!--Share Layer -->
+<!--Animation alert-->
+<div class="alertCopied"><p>با موفقیت کپی شد</p></div>
+<!--Start Layer-->
+
+<!--Black Background-->
+<div id="shadow-background-share" onclick="showShareBox(0)"></div>
+<!--End Black Background-->
+
+<!--Share Content-->
+<div id="open-social-media">
+	<svg xmlns="http://www.w3.org/2000/svg" onclick="showShareBox(0)" class="bi bi-x-square" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>
+	<div class="inner-socail-media">
+		<h5 class="share-title">این اپیزود را برای دوستانتان ارسال کنید!</h5>
+		<a href="#" id="share-wa" class="dropdown-item sharer button"><i class="fa fa-3x fa-whatsapp"></i></a>
+		<a href="#" id="share-fb" class="dropdown-item sharer button"><i class="fa fa-3x fa-facebook-square"></i></a>
+		<a href="#" id="share-tw" class="dropdown-item sharer button"><i class="fa fa-3x fa-twitter-square"></i></a>
+		<a href="#" id="share-li" class="dropdown-item sharer button"><i class="fa fa-3x fa-linkedin-square"></i></a>
+		<a href="#" id="share-gp" class="dropdown-item sharer button"><i class="fa fa-3x fa-google-plus-square"></i></a>
+		<a href="#" id="share-em" class="dropdown-item sharer button"><i class="fa fa-3x fa-envelope-square"></i></a>
+	</div>
+
+	<div class="iframe-code row">
+		<h5 for="disabledTextInput">در وبسایت خود منتشر کنید!</h5>
+		<input type="text" id="disabledTextInput" class="form-control iframeCode col-9" value="&lt;iframe src=&quot;https://sample.com/Episode/ &quot; style=&quot;border:0px #ffffff none;&quot; name=&quot;myiFrame&quot; scrolling=&quot;yes&quot; frameborder=&quot;1&quot; marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot; height=&quot;400px&quot; width=&quot;600px&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+		<div class="col-1"></div>
+		<button onclick="copyIframeText()" class="col-2">کپی آیفریم</button>
+	</div>
+
+	<div id="shortLink" class="short-link">
+		<h5>
+			از کد های کوتاه استفاده کنید!
+		</h5>
+	</div>
+</div>
+
+<!--End Share Layer-->
+
+
+<!--Start Initial row-->
+<div class="row initial-row">
+
+	<!--Start class="noSidebar"-->
+	<section class="noSidebar col-sm-12 col-md-12 col-12">
+
+	<!--Start Content-->
+	<div class="fixedWrapper"></div>
+	<section id="content" class="row col-12">
+
+			<div id="comment" class="col-md-12 col-sm-12 col-xl-3 col-lx-3">
+				<div class="height-container">
+					<p class="commentArea"> نظرات درباره اپیزود
+
+					<span class="commentEpisodeTitle">
+						جهان چرا این چنین است
+					</span>
+					را بخوانید
+					</p>
+					<a href="#" onclick="showCommentBox(1)" >نظرات</a>
+					<a href="#">خلاصه اپیزود</a>
+					<a href="#">داستان پادکست</a>
+				</div>
+			</div>
+
+			<div id="summary" class="col-md-12 col-sm-12 col-xl-9 col-lx-9" >
+				<div class="height-container">
+					<p class="summary-title">  آنچه در این اپیزود می شنویم </p>
+					<p>
+در قرن جدید چالش های زیادی از قییل فضاپیما های مدرن پا به عرضه ی هستی گذاشته اند . این وسایل از تکنولوژی های قدرتمندی استفاده می کنند که در عدم ماده می توانند با بهترین حالت ممکن حرکت کنند و کاربران خود را از هر گونه آسیبی در امان بدارند . آیا شما تا به حال سوار بر این هواپیما ها شده اید ؟
+					</p>
+					<p>
+عده ای معتقدند که در آینده ای نه چندان دور ، انسان های قرن های 23 به بعد میتوانند همچون تاکسی های امروزی در فضا پرواز کنند و از جذابیت های آن لذت ببرند . فکرش را بکنید هم اکنون که در قرن بیست و یک زندگی می کنیم چنین چیزی را تجربه کنیم . درست مثل فردی که در قرن شانزده زندگی می کرده است و یک تلویزیون 60 اینچ را می بینید ! همانقدر عجیب و غریب رفتار خواهد کرد که ما رفتار خواهیم کرد !
+					</p>
+					<p>
+حقیقت امر این ها همگی این است که دنیا جریان عجیبی از عجایب نیست بلکه دنیایی از حقایق است که نیازمند اکتشاف توسط انسان ها و افکار انسان هاست ! به من بگویید چه کسی فکرش را می کرد که زمانی بدون هیچ چیزی که دیده شود شما با یکدیگر تماس بگیرید و دنیایی از دیتا را از کامپیوتر شخصی تان به کامپیوتر یا دستگاه دیگری در میلیون ها کیلومتر آن طرف تر از کره زمین بدون وقفه برسد ؟
+					</p>
+					<p>
+						در قرن جدید چالش های زیادی از قییل فضاپیما های مدرن پا به عرضه ی هستی گذاشته اند . این وسایل از تکنولوژی های قدرتمندی استفاده می کنند که در عدم ماده می توانند با بهترین حالت ممکن حرکت کنند و کاربران خود را از هر گونه آسیبی در امان بدارند . آیا شما تا به حال سوار بر این هواپیما ها شده اید ؟
+					</p>
+					<p>
+						عده ای معتقدند که در آینده ای نه چندان دور ، انسان های قرن های 23 به بعد میتوانند همچون تاکسی های امروزی در فضا پرواز کنند و از جذابیت های آن لذت ببرند . فکرش را بکنید هم اکنون که در قرن بیست و یک زندگی می کنیم چنین چیزی را تجربه کنیم . درست مثل فردی که در قرن شانزده زندگی می کرده است و یک تلویزیون 60 اینچ را می بینید ! همانقدر عجیب و غریب رفتار خواهد کرد که ما رفتار خواهیم کرد !
+					</p>
+					<p>
+						حقیقت امر این ها همگی این است که دنیا جریان عجیبی از عجایب نیست بلکه دنیایی از حقایق است که نیازمند اکتشاف توسط انسان ها و افکار انسان هاست ! به من بگویید چه کسی فکرش را می کرد که زمانی بدون هیچ چیزی که دیده شود شما با یکدیگر تماس بگیرید و دنیایی از دیتا را از کامپیوتر شخصی تان به کامپیوتر یا دستگاه دیگری در میلیون ها کیلومتر آن طرف تر از کره زمین بدون وقفه برسد ؟
+					</p>
+				</div>
+			</div>
+
+	</section>
+
+	<!--End of Content-->
+
+
+	<section class="previous-background row d-flex justify-content-center">
+		<div class="container-2">
+			<div class="row post col-12">
+
+
+
+
+				<div class="col-4 poster">
+				<img class="poster col-12 d-flex justify-content-center" src="768px-Flag_of_None_(square).png" alt="">
+				</div>
+
+				<div class="col-2 more-info">
+					<div class="in-top">
+						<p class="Released-time"> <span class="">2020</span><span>Novamber</span><span>15</span></p>
+						<div>
+							<span>باردید :</span>
+							<span class="views-number"> 132659</span>
+						</div>
+					</div>
+					<div class="in-bottom">
+
+						<a id="shareIt" class="share-it" onclick="showShareBox(1)">
+							<svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-share" viewBox="0 0 16 16">
+								<path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+							</svg>
+						</a>
+
+
+						<a id="saveFav" class="save-to-fav" onclick="saveToFav(1)">
+							<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-music-note-list" viewBox="0 0 16 16">
+								<path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+								<path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+								<path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+								<path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+							</svg>
+						</a>
+
+						<a id="like" onclick="likeitPost(1)">
+							<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-heart" viewBox="0 0 16 16"><path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>
+						</a>
+
+						<span id="likeCounter"> 15365</span>
+					</div>
+				</div>
+
+				<div class="col-6 info">
+					<div class="title-container">
+					<h1 class="epizode-name">مردی در فضا</h1> / <h2 class="podcast-name">جهان چرا این چنین است؟</h2>
+					</div>
+					<br />
+					<hr />
+					<div class="row">
+						<div class="socail-media-txt col-1">
+							<h6>Socail Media</h6>
+						</div>
+						<div class="col-11">
+							<h4 class="speaker">
+								<div class="btn-group dropleft">
+									<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</button>
+									<div class="dropdown-menu speaker-social">
+										<a class="you-tube" href="" rel="nofollow">You Tube</a>
+										<a class="instagram" href="" rel="nofollow">Instagram</a>
+										<a class="telegram" href="" rel="nofollow">Telegram</a>
+										<a class="email" href="" rel="nofollow">Email</a>
+									</div>
+								</div>
+								گوینده :
+								<span>علی نامجو</span>
+							</h4>
+							<h4 class="writer">
+								<div class="btn-group dropleft">
+									<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</button>
+									<div class="dropdown-menu writer-social">
+										<a class="you-tube" href="" rel="nofollow">You Tube</a>
+										<a class="instagram" href="" rel="nofollow">Instagram</a>
+										<a class="telegram" href="" rel="nofollow">Telegram</a>
+										<a class="email" href="" rel="nofollow">Email</a>
+									</div>
+								</div>
+								نویسنده :
+								<span>آناهیتا درویش</span>
+							</h4>
+							<h4 class="organizer">
+								<div class="btn-group dropleft">
+									<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									</button>
+									<div class="dropdown-menu organizer-social">
+										<a class="you-tube" href="" rel="nofollow">You Tube</a>
+										<a class="instagram" href="" rel="nofollow">Instagram</a>
+										<a class="telegram" href="" rel="nofollow">Telegram</a>
+										<a class="email" href="" rel="nofollow">Email</a>
+									</div>
+								</div>
+								تنظیم کننده :
+								<span>مرجان جمشیدی راد</span>
+							</h4>
+						</div>
+					</div>
+					<hr />
+					<div class="resources">
+						<h6 class="title-section">منابع و مراجع مورد استفاده :</h6>
+						<h4 class="music-res">موسیقی :<span>استیون ادواردز</span></h4>
+						<h4 class="txt-res">نوشته ها :<span>کتاب و مجله ژرمن - فردی به نام فضا</span></h4>
+						<h4 class="report-res">گزارش :<span>نیویوریک تایمز در 12 ژانویه 2011</span></h4>
+					</div>
+					<hr />
+					<div class="download-Button">
+						<!--<span class="open-for-download">دانلود </span> | <span class="dl-Button">کیفیت 320</span><span class="dl-Button">کیفیت 128</span><span class="dl-Button">کیفیت 48</span>-->
+
+						<a class="btn btn-primary col-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							دانلود
+						</a>
+						<span class="collapse col-10" id="collapseExample">
+
+								<span class="dl-Button">کیفیت 320</span><span class="dl-Button">کیفیت 128</span><span class="dl-Button">کیفیت 48</span>
+
+						</span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class="full-width playertown-mother">
+			<div class="row playertown col-xl-10 col-12 d-flex justify-content-center">
+
+				<audio id="myAudio">
+					<source src="file_example_MP3_2MG.mp3">
+					Your browser does not support the audio element.
+				</audio>
+
+				<div class="buttons col-12">
+					<div class="row under-under-play-area col-12">
+						<div class="col-2"></div>
+
+						<a class="col-3 backward" onclick="setCurTime(-10)" type="button">
+							<div>
+							-10
+							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+							</svg>
+							</div>
+						</a>
+
+						<a class="col-2" id="playpausebtn">
+							<div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+								<path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+							</svg>
+							</div>
+						</a>
+
+
+						<a class="col-3 forward" onclick="setCurTime(20)" type="button">
+							<div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+							</svg>
+							+20
+							</div>
+						</a>
+						<div class="col-2">
+						<input id="volume-control" class="slider" type="range" min="0" max="100" value="99">
+						</div>
+					</div>
+
+
+
+					<div class="row under-play-area col-12">
+						<div class="speed-set dropdown col-2 ">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="speedPlay" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="bi" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve">
+									<g>
+										<path style="fill:#222220;" d="M305,173.726c0-41.662-16.799-79.469-43.972-107.02c-0.212-0.282-0.438-0.558-0.695-0.815   c-0.257-0.257-0.532-0.483-0.814-0.694C231.968,38.024,194.161,21.226,152.5,21.226c-41.661,0-79.468,16.799-107.02,43.971   c-0.282,0.212-0.557,0.438-0.814,0.694c-0.257,0.257-0.483,0.532-0.695,0.815C16.799,94.257,0,132.064,0,173.726   c0,40.729,15.859,79.018,44.655,107.821c0.004,0.004,0.008,0.009,0.012,0.013c0.003,0.002,0.005,0.005,0.008,0.007   c0.004,0.004,0.008,0.008,0.012,0.012c1.464,1.464,3.383,2.195,5.302,2.195c1.92,0,3.84-0.732,5.304-2.197   c0.125-0.125,0.238-0.258,0.352-0.39l23.112-23.113c2.929-2.93,2.929-7.678,0-10.607c-2.929-2.928-7.678-2.928-10.606,0   l-18.036,18.036c-21.031-23.403-33.232-52.857-34.91-84.277h25.507c4.142,0,7.5-3.357,7.5-7.5s-3.358-7.5-7.5-7.5H15.207   c1.744-32.272,14.668-61.618,34.957-84.229l17.987,17.987c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.839-0.732,5.303-2.196   c2.929-2.93,2.929-7.678,0-10.607L60.771,71.389C83.383,51.1,112.728,38.176,145,36.433v25.506c0,4.143,3.358,7.5,7.5,7.5   s7.5-3.357,7.5-7.5V36.433c32.272,1.743,61.617,14.668,84.229,34.957l-17.987,17.987c-2.929,2.93-2.929,7.678,0,10.607   c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.196l17.987-17.987c20.289,22.612,33.214,51.957,34.957,84.229h-25.506   c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h25.507c-1.678,31.42-13.878,60.875-34.909,84.278l-18.036-18.037   c-2.928-2.928-7.677-2.928-10.606,0c-2.929,2.93-2.929,7.678,0,10.607l23.485,23.485c1.464,1.464,3.384,2.196,5.303,2.196   c0.959,0,1.919-0.183,2.822-0.549c0.903-0.366,1.749-0.915,2.482-1.647C289.137,252.755,305,214.459,305,173.726z"/>
+										<path style="fill:#222220;" d="M186.956,87.718c-3.847-1.541-8.211,0.327-9.751,4.173l-21.673,54.1   c-1.01-0.108-2.02-0.182-3.031-0.182c-10.556,0-20.091,5.847-24.886,15.259c-5.012,9.839-3.728,21.595,3.432,31.445   c0.732,1.007,1.652,1.928,2.666,2.665c5.817,4.229,12.314,6.464,18.788,6.464c10.556,0,20.092-5.847,24.886-15.259   c5.012-9.839,3.728-21.594-3.427-31.437c-0.732-1.01-1.654-1.934-2.671-2.674c-0.547-0.398-1.106-0.761-1.665-1.123l21.505-53.681   C192.669,93.624,190.801,89.258,186.956,87.718z M164.02,179.574c-2.221,4.359-6.635,7.067-11.52,7.067   c-3.204,0-6.429-1.119-9.589-3.327c-3.6-5.169-4.307-10.773-1.93-15.438c2.22-4.359,6.634-7.067,11.52-7.067   c1.558,0,3.12,0.27,4.678,0.795c0.051,0.021,0.098,0.048,0.15,0.069c0.164,0.065,0.329,0.118,0.494,0.171   c1.43,0.549,2.854,1.305,4.266,2.291C165.688,169.304,166.396,174.909,164.02,179.574z"/>
+									</g>
+
+								</svg>-->
+								1x
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<li class="dropdown-item" onclick="setPlaySpeed(2.0)"><a type="button"> 2x</a></li>
+								<li class="dropdown-item" onclick="setPlaySpeed(1.5)"><a type="button"> 1.5x</a></li>
+								<li class="dropdown-item" onclick="setPlaySpeed(1.25)"><a type="button"> 1.25x</a></li>
+								<li class="dropdown-item" onclick="setPlaySpeed(1.0)"><a type="button"> 1.0x</a></li>
+								<li class="dropdown-item" onclick="setPlaySpeed(0.75)"><a type="button"> 0.75x</a></li>
+								<li class="dropdown-item" onclick="setPlaySpeed(0.5)"><a type="button"> 0.5x</a></li>
+							</ul>
+						</div>
+						<span class="col-8  d-flex justify-content-center"></span>
+						<a class="col-2" id="loopset" onclick="loopStatus_Now(1)">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#ccc" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+								<path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+							</svg>
+						</a>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="row LineBar col-xl-11 col-12">
+					<div class="col-1">
+						<span id="curtimetext">00:00</span>
+					</div>
+					<div class="col-10">
+						<input id="seekslider" class="slider" type="range" min="0" max="100" value="0" step="1">
+						<div class="onTimeLineBar"></div>
+						<div class="UnderTimeLineBar"></div>
+					</div>
+					<div class="col-1">
+						<span id="durtimetext">00:00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--End Player-->
+
+	</section>
+	<!--End class="noSidebar"-->
+
+	<!--Start Sidebar-->
+	<section class="sidebar col-sm-12 col-md-12">
+		Sidebar
+	</section>
+
+</div>
+<!--End Initial row-->
+
+<!--End Sidebar-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+<script src="script.js"></script>
+<script src="jQuery.js"></script>
+</body>
+</html>
+
+
+
+
+
+
